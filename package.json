@@ -12,10 +12,11 @@
     "expo-graphics-rnge": "^1.2.0",
     "expo-three": "^4.0.5",
     "lodash": "^4.17.11",
+    "matter-js": "^0.14.2",
     "oimo": "^1.0.9",
     "react": "16.8.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-native-game-engine": "^1.0.0"
+    "react-native-game-engine": "^1.1.1"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",

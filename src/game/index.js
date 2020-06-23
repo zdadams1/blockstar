@@ -1,22 +1,20 @@
-import React from "react";
-import { GameEngine } from "react-native-game-engine";
-import Renderer from "./graphics/renderer";
-import Systems from "./systems";
-import Entities from "./entities";
+import React from 'react';
+import { GameEngine } from 'react-native-game-engine';
+import Renderer from './graphics/renderer';
+import Systems from './systems';
+import Entities from './entities';
 
-import ShaderPass from "./graphics/passes/shader-pass";
-import PixelShader from "./graphics/shaders/pixel-shader";
+import ShaderPass from './graphics/passes/shader-pass';
+import PixelShader from './graphics/shaders/pixel-shader';
 
 class Game extends React.Component {
   render() {
     return (
       <GameEngine
-        style={{ backgroundColor: "black" }}
+        style={{ backgroundColor: 'blue' }}
         systems={Systems}
         entities={Entities()}
-        renderer={Renderer(
-          new ShaderPass(PixelShader())
-        )}
+        renderer={Renderer(new ShaderPass(PixelShader()))}
       />
     );
   }
